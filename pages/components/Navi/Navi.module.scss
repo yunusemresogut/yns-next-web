@@ -1,0 +1,18 @@
+.navigation {
+  background: #ddd;
+  ul {
+    display: flex;
+    li {
+      a {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        &:hover {
+          color: #fff;
+          background-color: #222;
+        }
+      }
+    }
+  }
+}
