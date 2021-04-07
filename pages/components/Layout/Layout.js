@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import styles from "./Layout.module.css";
+import styles from "./Layout.module.scss";
 import Navi from "../Navi/Navi";
 import Footer from "../Footer/Footer";
 

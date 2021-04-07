@@ -1,7 +1,11 @@
 .navigation {
-  background: #ddd;
+  position: sticky;
+  top: 0;
+  background-color: var(--background-color-dark);
+  color: var(--text-color-secondary);
   ul {
     display: flex;
+    justify-content: center;
     li {
       a {
         height: 60px;
@@ -9,8 +13,9 @@
         align-items: center;
         padding: 0 20px;
         &:hover {
-          color: #fff;
-          background-color: #222;
+          transition: var(--animation-speed);
+          color: var(--text-orangered);
+          background-color: var(--color-animate-2);
         }
       }
     }
