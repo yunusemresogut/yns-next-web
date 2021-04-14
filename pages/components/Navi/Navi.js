@@ -12,7 +12,7 @@ function Navi() {
             </Link>
           </li>
           <li>
-            <Link href="/blog/posts">
+            <Link prefetch href="/blog/posts">
               <a>Blog</a>
             </Link>
           </li>

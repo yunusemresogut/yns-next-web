@@ -16,7 +16,7 @@ export function getCategory(categories) {
 
 export function getCategories() {
   return function (dispatch) {
-    let url = ""; // URL Girilecek
+    let url = "http://localhost:3000/categories";
     return fetch(url)
       .then((res) => res.json())
       .then((data) => dispatch(getCategory(data)));
