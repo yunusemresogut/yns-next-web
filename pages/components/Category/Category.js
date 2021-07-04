@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Category.module.scss";
 
-import sanityClient from "../../../../sanity";
+import sanityClient from "../../../sanity";
 
 function Category({ categoryT }) {
   return (
