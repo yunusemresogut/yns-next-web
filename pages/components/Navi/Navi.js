@@ -7,12 +7,19 @@ function Navi() {
       <nav>
         <ul>
           <li>
+            <Link href="/" className={styles.logo}>
+              <a>
+                yes blog:$<span className={styles.cursor}>|</span>
+              </a>
+            </Link>
+          </li>
+          <li>
             <Link href="/">
               <a>Anasayfa</a>
             </Link>
           </li>
           <li>
-            <Link prefetch href="/blog/posts">
+            <Link href="/blog">
               <a>Blog</a>
             </Link>
           </li>

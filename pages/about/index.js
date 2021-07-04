@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Link from "next/link";
-import Layout from "./components/Layout/Layout";
-import styles from "../styles/about.module.scss";
+import Layout from "../components/Layout/Layout";
+import styles from "./about.module.scss";
 
 function About() {
   return (

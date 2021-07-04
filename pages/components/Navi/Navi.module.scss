@@ -3,6 +3,7 @@
   top: 0;
   background-color: var(--background-color-dark);
   color: var(--text-color-secondary);
+  z-index: 10;
   ul {
     display: flex;
     justify-content: center;
@@ -19,5 +20,39 @@
         }
       }
     }
+    :first-child {
+    }
+  }
+  .logo {
+    cursor: pointer;
+  }
+
+  @mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+      @content;
+    }
+    @-moz-keyframes #{$name} {
+      @content;
+    }
+    @-ms-keyframes #{$name} {
+      @content;
+    }
+    @keyframes #{$name} {
+      @content;
+    }
+  }
+
+  @include keyframes(blink) {
+    0% {
+      color: transparent;
+    }
+    50% {
+      color: var(--text-orangered);
+    }
+  }
+
+  .cursor {
+    font-size: 30px;
+    animation: blink 1s step-end infinite;
   }
 }
