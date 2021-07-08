@@ -9,6 +9,10 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       grid-gap: 20px;
+      :hover {
+        opacity: 0.9;
+        transition: var(--animation-speed);
+      }
       .post-body {
         display: block;
         height: 16rem;

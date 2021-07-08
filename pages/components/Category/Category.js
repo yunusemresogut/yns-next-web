@@ -1,22 +1,21 @@
 import React from "react";
 import styles from "./Category.module.scss";
 
-//import sanityClient from "../../../sanity";
+import sanityClient from "../../../sanity";
 
 function Category({ categoryT }) {
-  return <div className={styles["category-list"]}></div>;
-}
-/*
-
-<ul>
+  return (
+    <div className={styles["category-list"]}>
+      <ul>
         {categoryT &&
           categoryT.map((category) => (
             <li key={category.title}>{category.title}</li>
           ))}
       </ul>
+    </div>
+  );
+}
 
-*/
-/*
 export const getServerSideProps = async () => {
   const query = `*[ _type ==  "category"] | order(_createdAt desc){
     title,
@@ -39,5 +38,5 @@ export const getServerSideProps = async () => {
     };
   }
 };
-*/
+
 export default Category;
